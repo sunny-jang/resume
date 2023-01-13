@@ -1,37 +1,9 @@
 <script>
 	import ContractInfoBox from './components/contract/ContractInfoBox.svelte';
 	import Introduction from './components/introduction/Introduction.svelte';
-	import BigHeader from './components/header/BigHeader.svelte';
-
-	let name = '장은선';
-	let engName = 'Sunny';
-	let lastUpdated = '2023.01.13';
-
-	let channels = [
-		{
-			label: 'Github',
-			href: 'https://github.com/sunny-jang',
-			text: 'https://github.com/sunny-jang'
-		},
-		{
-			label: 'Blog',
-			href: 'https://sunny-jang.tistory.com',
-			text: 'https://sunny-jang.tistory.com'
-		},
-	];
-	let contract = [
-		{
-			label: 'Email',
-			text: 'esunbest@gmail.com'
-		},
-	];
-
-	let introduction = [
-		'프로젝트 결과물이 성과를 보였을 때 가장 성취감이 큰',
-		'개발 생산성을 높이는기술을 서비스에 접목시킬 때가 즐거운',
-		'새로운 것을 배우는 것에 두려움이 없는',
-		'한줄의 코드로도 여러 삶에 가치를 더해줄 수 있는',
-	]
+	import Experiences from './components/content/Experiences.svelte';
+	import Projects from './components/content/Projects.svelte';
+	import {name, engName, lastUpdated, channels,contract, introduction, workSection, projects} from './data/index.svelte';
 </script>
 
 <main>
@@ -43,7 +15,8 @@
 		<ContractInfoBox title={'Channels'} list={channels} />
 		<ContractInfoBox title={'Contracts'} list={contract} />
 	</div>
-	<BigHeader title="Work Experience" />
+	<Experiences title="Work Experience" item={workSection} />
+	<Projects title="Projects" item={projects} />
 </main>
 
 <style lang="scss">
@@ -59,10 +32,6 @@
 	h1 {
 		display: flex;
 		align-items: center;
-	}
-
-	h3 {
-		color: orange;
 	}
 
 	.deco_bar {
