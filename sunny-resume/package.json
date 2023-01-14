@@ -25,5 +25,6 @@
     "gh-pages": "^4.0.0",
     "sass": "^1.57.1",
     "sirv-cli": "^2.0.0"
-  }
+  },
+  "homepage": "https://sunny-jang.github.io/resume"
 }
