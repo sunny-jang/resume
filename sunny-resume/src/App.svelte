@@ -16,7 +16,7 @@
 		<ContractInfoBox title={'Contracts'} list={contract} />
 	</div>
 	<Experiences title="Work Experience" item={workSection} />
-	<Projects title="Projects" item={projects} />
+	<Projects title="Projects" projects={projects} />
 </main>
 
 <style lang="scss">
@@ -25,7 +25,7 @@
 		width:820px;
 		margin: 0 auto;
 		padding: 1em;
-		max-width: 240px;
+		box-sizing: border-box;
 		margin: 0 auto;
 	}
 
@@ -51,9 +51,13 @@
 		background-color: #eee;
 	}
 	
-	@media (min-width: 640px) {
+	@media (max-width: 640px) {
 		main {
+			width: 100%;
+			padding: 20px;
 			max-width: none;
+			box-sizing: border-box;
+			font-size: 12px;
 		}
 	}
 </style>
