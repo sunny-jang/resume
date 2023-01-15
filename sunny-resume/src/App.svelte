@@ -2,20 +2,22 @@
 	import ContractInfoBox from './components/contract/ContractInfoBox.svelte';
 	import Introduction from './components/introduction/Introduction.svelte';
 	import Experiences from './components/content/Experiences.svelte';
-	import {name, engName, lastUpdated, channels,contract, introduction, workSection} from './data/index.svelte';
+	import Projects from './components/content/Projects.svelte';
+	import {name, engName, lastUpdated, channels,contract, introductionText, workSection,projects, otherprojects} from './data/index.svelte';
 </script>
 
 <main>
 	<h1><span class="deco_bar" />{name} ({engName})</h1>
 	<span class="update_date">last updated: {lastUpdated}</span>
-	<Introduction introduction={introduction} />
+	<Introduction introduction={introductionText} />
 	<div class="div" />
 	<div class="contracts_info">
 		<ContractInfoBox title={'Channels'} list={channels} />
 		<ContractInfoBox title={'Contracts'} list={contract} />
 	</div>
 	<Experiences title="EXPERIENCES & PROJECTS" item={workSection} />
-	<!-- <Projects title="Projects" projects={projects} /> -->
+	<Projects title="PROJECTS" projects={projects} />
+	<Projects title="OTHER PROJECTS" projects={otherprojects} />
 </main>
 
 <style lang="scss">

@@ -13,7 +13,7 @@ export let title;
             <div class="experience">
                 <div class="content_left">
                     <h4>{experience.companyName}</h4>
-                    <span>{experience.period}</span>
+                    <div>{experience.period}</div>
                 </div>
                 <div class="content_right">
                     <h5>{experience.description}</h5>
@@ -29,7 +29,7 @@ export let title;
                     </ul>
                 </div>
             </div>
-            <Projects title="" projects={experience.projects} />
+            <!--<Projects title="" projects={experience.projects} />-->
         </div>
         
     {/each}
@@ -37,15 +37,20 @@ export let title;
 </div>
 
 <style lang="scss">
-    .experience_projects {
-        padding: 30px 0;
-    }
+.experience_projects {
+    border-top: 1px solid #eee;
+}
 .experience {
     display: flex;
+    padding: 10px 0;
     h4 {
-        font-size: 27px;
+        font-size: 24px;
         margin-top: 0px;
         margin-bottom: 30px;
+        display: inline-block;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        border-left: 4px solid orange;
     }
 
     h5 {
@@ -53,15 +58,15 @@ export let title;
     }
 
     .content_left {
-        width: 25%;
+        width: 30%;
     }
 
     .content_right {
-        width: 75%;
+        width: 70%;
     }
 
     .detail {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .skil {

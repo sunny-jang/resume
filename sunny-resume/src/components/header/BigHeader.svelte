@@ -8,6 +8,5 @@ export let title;
     h2 {
         color: orange;
         padding: 30px 0px 10px;
-        border-bottom: 1px solid #eee;
     }
 </style>
