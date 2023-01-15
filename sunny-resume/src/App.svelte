@@ -2,8 +2,7 @@
 	import ContractInfoBox from './components/contract/ContractInfoBox.svelte';
 	import Introduction from './components/introduction/Introduction.svelte';
 	import Experiences from './components/content/Experiences.svelte';
-	import Projects from './components/content/Projects.svelte';
-	import {name, engName, lastUpdated, channels,contract, introduction, workSection, projects} from './data/index.svelte';
+	import {name, engName, lastUpdated, channels,contract, introduction, workSection} from './data/index.svelte';
 </script>
 
 <main>
@@ -15,14 +14,14 @@
 		<ContractInfoBox title={'Channels'} list={channels} />
 		<ContractInfoBox title={'Contracts'} list={contract} />
 	</div>
-	<Experiences title="Work Experience" item={workSection} />
-	<Projects title="Projects" projects={projects} />
+	<Experiences title="EXPERIENCES & PROJECTS" item={workSection} />
+	<!-- <Projects title="Projects" projects={projects} /> -->
 </main>
 
 <style lang="scss">
 	main {
 		/* text-align: center; */
-		width:820px;
+		width:1000px;
 		margin: 0 auto;
 		padding: 1em;
 		box-sizing: border-box;
