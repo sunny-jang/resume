@@ -1,7 +1,7 @@
 <script context="module">
 export let name = '장은선';
 export let engName = 'Sunny';
-export let lastUpdated = '2023.01.13';
+export let lastUpdated = '2023.01.15';
 
 export let channels = [
     {
@@ -33,7 +33,7 @@ export let introduction = [
 export let introductionText = `
     안녕하세요. 4년차 프론트앤드 개발자 장은선입니다. </br></br>
 
-    웹/앱 서비스의 프론트앤드 개발과 스타트업 개발자로서의 다양한 경험이 있습니다. React, javsScript, typeScript, Redux, SWR, Git 등을 사용하여 프로덕션 서비스를 설계 개발, 
+    웹/앱 서비스의 프론트앤드 개발과 스타트업 개발자로서의 많은 경험을 가지고 있습니다. React, javsScript, typeScript, Redux, SWR, Git 등을 사용하여 프로덕션 서비스를 설계 개발, 
     운영한 경험으로 확장성과 유지보수성이 높은 개발을 하기 위해 언제나 고민하고 있습니다. </br>
     프론트앤드 개발자로 다수의 프로젝트에 참여해 갖춘 업무처리속도와 다양한 플랫폼 기반의 UX개발 경험들은 제 강점중의 하나입니다.</br>
     신속한 서비스 제공과 안정화된 코드로 유저들에게 편리함과 신뢰할 수 있는 서비스의 경험을 남기기 위해 노력하고 있습니다.</br></br>
@@ -248,19 +248,6 @@ export let workSection = {
     ]
 }
 
-export const otherprojects = [
-    {
-        projectTitle: 'NearBnb',
-        period: '2016년 2월 - 2016년 4월',
-        description: null
-    },
-    {
-        projectTitle: 'C-It',
-        period: '2016년 2월 - 2016년 4월',
-        description: null
-    },
-]
-
 export const projects = [
     {
         projectTitle: 'Cobak 블록체인 커뮤니티 운영/리뉴얼',
@@ -321,7 +308,7 @@ export const projects = [
         description: `인턴십 프로그램에 참여하여 얻은 Score로 물품을 구매할 수 있는 인턴십 내 스토어 앱 개발
 
 - firebase realtime 데이터베이스로 각 프로젝트 내의 채팅기능 개발
-- 어드민에게만 프로젝트 생성 및 인턴 배정 권한을 적용
+- 어드민에게만 프로젝트 생성 및 인턴 배정 권한을 부여
 - <b>팀 리더로 프런트 엔드 개발 및 지원 백엔드 프로그래밍을 주도</b>. 설계 기능의 기술적 타당성 및 최적화 할 수 있는 방안을 모색.
             `
     },
@@ -402,5 +389,28 @@ export const projects = [
             period: '2016년 2월 - 2016년 4월',
             description: null
         },
+]
+
+export const otherprojects = [
+    {
+        projectTitle: 'NearBnb',
+        period: '2021년 2월 - 2021년 4월',
+        projectGroup: '개별 프로젝트',
+        description: `현재 위치 기반의 숙소를 찾아 예약할 수 있는 서비스.
+            - 호스트계정 - 원하는 기간에 숙소를 등록하는 기능에 기여(90%)
+            - google map 기반의 좌표를 기반으로 내 위치 반경을 계산해 지도에 근처 숙소 노출 
+            Java, Spring, Orqcle로 백앤드를 구축
+        `
+    },
+    {
+        projectTitle: 'C-It',
+        period: '2021년 4월 - 2016년 6월',
+        projectGroup: '개별 프로젝트',
+        description: `IT 관련 주요 뉴스를 모아볼 수 있는 IT news 모아보기 커뮤니티
+        - 뉴스등록을 위한 news 모델 설계
+        - 커뮤니티 유저 회원가입을 위해 Mail 인증을 구현
+        Java, Spring, Orqcle로 백앤드를 구축
+        `
+    },
 ]
 </script>

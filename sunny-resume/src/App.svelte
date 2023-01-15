@@ -3,21 +3,28 @@
 	import Introduction from './components/introduction/Introduction.svelte';
 	import Experiences from './components/content/Experiences.svelte';
 	import Projects from './components/content/Projects.svelte';
+	import Education from './components/content/Education.svelte';
+	import Articles from './components/content/Articles.svelte';
 	import {name, engName, lastUpdated, channels,contract, introductionText, workSection,projects, otherprojects} from './data/index.svelte';
+    import BigHeader from './components/header/BigHeader.svelte';
+    import Skills from './components/content/Skills.svelte';
 </script>
 
 <main>
 	<h1><span class="deco_bar" />{name} ({engName})</h1>
 	<span class="update_date">last updated: {lastUpdated}</span>
 	<Introduction introduction={introductionText} />
+	<Skills />
 	<div class="div" />
 	<div class="contracts_info">
 		<ContractInfoBox title={'Channels'} list={channels} />
 		<ContractInfoBox title={'Contracts'} list={contract} />
 	</div>
-	<Experiences title="EXPERIENCES & PROJECTS" item={workSection} />
+	<Experiences title="EXPERIENCES" item={workSection} />
 	<Projects title="PROJECTS" projects={projects} />
-	<Projects title="OTHER PROJECTS" projects={otherprojects} />
+	<Projects title="그 외 프로젝트" projects={otherprojects} />
+	<Articles />
+	<Education />
 </main>
 
 <style lang="scss">
@@ -37,7 +44,7 @@
 
 	.deco_bar {
 		width: 7px;
-		background-color: orange;
+		background-color: #A41D1A;
 		display: inline-block;
 		height: 40px;
 		margin-right: 10px;

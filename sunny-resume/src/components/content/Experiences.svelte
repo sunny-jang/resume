@@ -39,10 +39,14 @@ export let title;
 <style lang="scss">
 .experience_projects {
     border-top: 1px solid #eee;
+
+    &:first-child {
+        border: none;
+    }
 }
 .experience {
     display: flex;
-    padding: 10px 0;
+    padding: 20px 0;
     h4 {
         font-size: 24px;
         margin-top: 0px;
@@ -50,7 +54,7 @@ export let title;
         display: inline-block;
         padding-bottom: 5px;
         padding-left: 10px;
-        border-left: 4px solid orange;
+        border-left: 4px solid #A41D1A;
     }
 
     h5 {
@@ -71,7 +75,7 @@ export let title;
 
     .skil {
         padding: 3px 5px;
-        background: darkcyan;
+        background: #293757;
         color: white;
         border-radius: 6px;
         font-size: 12px;

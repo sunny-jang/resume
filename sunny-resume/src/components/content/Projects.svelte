@@ -4,8 +4,8 @@ export let title;
 export let projects = [];
 </script>
 {#if title}
-    <BigHeader title={title} />
-{/if}
+    <BigHeader title={title} sideEle={`(${projects.length})`} />
+    {/if}
 {#each projects as project}
     <div class="project_info">
         <h5>
@@ -45,7 +45,7 @@ export let projects = [];
             width: 6px;
             height: 6px;
             border-radius: 6px;
-            background-color: orange;
+            background-color: #cb2525;
             position: absolute;
             top: 10px;
             left: 0;
