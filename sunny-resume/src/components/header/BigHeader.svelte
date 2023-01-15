@@ -10,7 +10,7 @@ export let sideEle;
 
 <style>
     h2 {
-        color: #D26A1B;
+        color: orange;
         padding: 50px 0px 10px;
         font-size: 30px;
         margin: 0;

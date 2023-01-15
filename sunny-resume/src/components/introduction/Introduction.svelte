@@ -23,8 +23,4 @@ export let introduction;
         font-size: 20px;
     }
 
-    .introduction_text {
-        padding-bottom: 20px;
-        border-bottom: 1px solid #eee;
-    }
 </style>

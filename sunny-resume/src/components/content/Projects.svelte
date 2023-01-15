@@ -45,7 +45,7 @@ export let projects = [];
             width: 6px;
             height: 6px;
             border-radius: 6px;
-            background-color: #cb2525;
+            background-color: darkcyan;
             position: absolute;
             top: 10px;
             left: 0;

@@ -54,7 +54,7 @@ export let title;
         display: inline-block;
         padding-bottom: 5px;
         padding-left: 10px;
-        border-left: 4px solid #A41D1A;
+        border-left: 4px solid orange;
     }
 
     h5 {
@@ -75,7 +75,7 @@ export let title;
 
     .skil {
         padding: 3px 5px;
-        background: #293757;
+        background: darkcyan;
         color: white;
         border-radius: 6px;
         font-size: 12px;

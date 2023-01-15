@@ -34,7 +34,7 @@
 		margin: 0 auto;
 		padding: 1em;
 		box-sizing: border-box;
-		margin: 0 auto;
+		margin-bottom: 100px;
 	}
 
 	h1 {
@@ -44,7 +44,7 @@
 
 	.deco_bar {
 		width: 7px;
-		background-color: #A41D1A;
+		background-color: darkcyan;
 		display: inline-block;
 		height: 40px;
 		margin-right: 10px;
