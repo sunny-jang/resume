@@ -21,7 +21,7 @@
 		<ContractInfoBox title={'Contracts'} list={contract} />
 	</div>
 	<Experiences title="EXPERIENCES" item={workSection} />
-	<Projects title="PROJECTS" projects={projects} />
+	<!-- <Projects title="PROJECTS" projects={projects} /> -->
 	<Projects title="그 외 프로젝트" projects={otherprojects} />
 	<Articles />
 	<Education />
@@ -60,6 +60,9 @@
 	}
 	
 	@media (max-width: 640px) {
+		html,body {
+			font-size: 12px;
+		}
 		main {
 			width: 100%;
 			padding: 20px;

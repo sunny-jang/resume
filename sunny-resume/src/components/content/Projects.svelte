@@ -32,7 +32,7 @@ export let projects = [];
         }
     }
     h5 {
-        font-size: 24px;
+        font-size: 1.35rem;
         margin-bottom: 10px;
         margin-top: 20px;
         padding-left: 15px;

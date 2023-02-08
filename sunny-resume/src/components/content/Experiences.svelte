@@ -1,6 +1,6 @@
 <script>
 import BigHeader from '../header/BigHeader.svelte';
-    import Projects from './Projects.svelte';
+import Projects from './Projects.svelte';
 export let item;
 export let title;
 </script>
@@ -21,7 +21,7 @@ export let title;
                     {#each experience.detailList as detail}
                         <li class="detail">{detail.content}</li>
                     {/each}
-                        <li>Tech Skills: 
+                        <li class="detail">Tech Skills: 
                             {#each experience.techSkils as skills}
                                 <span class="skil">{skills}</span>
                             {/each}
@@ -29,7 +29,7 @@ export let title;
                     </ul>
                 </div>
             </div>
-            <!--<Projects title="" projects={experience.projects} />-->
+            <Projects title="" projects={experience.projects} />
         </div>
         
     {/each}
@@ -38,23 +38,25 @@ export let title;
 
 <style lang="scss">
 .experience_projects {
-    border-top: 1px solid #eee;
+    margin-top: 80px;
+    border-top: 3px solid darkorange;
 
     &:first-child {
-        border: none;
+        margin-top: 0px;
     }
 }
 .experience {
     display: flex;
-    padding: 20px 0;
+    padding: 20px 0;    
+
     h4 {
-        font-size: 24px;
+        font-size: 2rem;
         margin-top: 0px;
         margin-bottom: 30px;
         display: inline-block;
         padding-bottom: 5px;
         padding-left: 10px;
-        border-left: 4px solid orange;
+        // border-left: 4px solid orange;
     }
 
     h5 {
@@ -75,6 +77,7 @@ export let title;
 
     .skil {
         padding: 3px 5px;
+        margin-bottom: 3px;
         background: darkcyan;
         color: white;
         border-radius: 6px;
